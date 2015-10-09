@@ -45,62 +45,147 @@
 
 			<section>
 				<h1>DevOps</h1>
-				<h3><i>why you should care</i></h3>
+				<h3>
+					<i>why you should care</i>
+				</h3>
+				<br />
 				<p>
-					<small>Andrzej Bednarz <a
-						href="http://twitter.com/bednarz_andrzej">@bednarz_andrzej</a></small>
+					Andrzej Bednarz<br /> <a href="http://twitter.com/bednarz_andrzej">@bednarz_andrzej</a><br />
+					<img src="img/NA_logo_header.png"
+						style="width: 25%; height: 25%; border: none; box-shadow: none;" />
 				</p>
-				<img src="img/NA_logo_header.png" style="width: 25%; height: 25%; border: 0; box-shadow: 0 0 0;" />
 			</section>
 
 			<section>
 				<h2>About me</h2>
 				<ul>
-					<li>10+ years in software development</li>
-					<li>Currently CTO in NetworkedAssets</li>
-					<li>Agile</li>
-					<li>Software Craftsmanship</li>
-					<li>Java and JVM</li>
+					<li class="fragment">10+ years in software development</li>
+					<li class="fragment">Currently CTO in NetworkedAssets</li>
+					<li class="fragment">Agile</li>
+					<li class="fragment">Software Craftsmanship</li>
+					<li class="fragment">Java and JVM</li>
 				</ul>
 			</section>
 
 			<section>
 				<h2>Agenda</h2>
 				<ul>
-					<li>What is the problem?</li>
-					<li>Where DevOps come from</li>
-					<li>A DevOps process</li>
-					<li>Some DevOps tools</li>
+					<li class="fragment">What is the problem?</li>
+					<li class="fragment">Where DevOps come from</li>
+					<li class="fragment">What DevOps is
+					<li class="fragment">An example of DevOps process & tools</li>
 				</ul>
 			</section>
 
 			<section>
-				<h2>Deployment in the past</h2>
-					<ul>
-						<li><b>2005</b>: <br/>Classes, beginning of CI, big bang release</li><!-- Bylo juz CI, wchodzilo budowanie paczek, ale klaski, big bang release, lokalne srodowisko nic wspolnego z prod. -->
-						<li><b>2010</b>: Manual process, backup, local vs. production - hard testing, failover not really tested</li><!--  CI budowalo, ale deploy reczny, dlugie procedury, backupy, dlugie przerwy -->
-					</ul>
+				<h3>You've developed code ...</h3>
+				<h3 class="fragment">and what's next</h3>
 			</section>
 
 			<section>
-				<h3><i>So what?</i></h3>
+				<h2>Example from 2005</h2>
+				<ul>
+					<li class="fragment">beginning of CI</li>
+					<li class="fragment">manual non-repeatable deployment (small
+						classes or big bang)</li>
+					<li class="fragment">weak code configuration & versioning</li>
+					<!-- Bylo juz CI, wchodzilo budowanie paczek, ale klaski, big bang release, lokalne srodowisko nic wspolnego z prod. -->
+				</ul>
 			</section>
 
 			<section>
-				<h2>Agile</h2>
-					<ul>
-						<li>We already improved the side: <i>requirements -> code</i>. What about <i>code -> production</i></li>
-						<li>Long and error prone deployment process. How to accelerate your business?</li>
-						<li>While, as with Agile, it’s incorrect to say a tool is “a DevOps tool” in the sense that it will magically bring you DevOps, 
-						there are certainly specific tools being developed with the express goal of facilitating the above principles, methods, and practices, 
-						and a holistic understanding of DevOps should incorporate this layer</li> <!-- http://theagileadmin.com/what-is-devops/  -->
-						<li> In the end, what DevOps hopes to bring to Agile is the understanding and practice that software isn’t done 
-						until it’s successfully delivered to a user and meets their expectations around availability, performance, and pace of change.</li> <!-- http://theagileadmin.com/what-is-devops/  --> 
-					</ul>
+				<h2>Example from 2010</h2>
+				<ul>
+					<li class="fragment">fairly good CI</li>
+					<li class="fragment">but no integration tests</li>
+					<li class="fragment">local vs. production environment</li>
+					<li class="fragment">manual & repeatable but controlled
+						deployment</li>
+					<li class="fragment">failover only "hopefully"</li>
+					<!--  CI budowalo, ale deploy reczny, dlugie procedury, backupy, dlugie przerwy -->
+				</ul>
 			</section>
 
 			<section>
-				<h2>Imagine how great it could be</h2>
+				<h2>So what?</h2>
+				<ul>
+					<li class="fragment">Fear to release</li>
+					<li class="fragment">Slow cycle from requirements to live app
+						- business suffers</li>
+					<li class="fragment">Fragile deployments</li>
+					<li class="fragment">Big stress</li>
+					<li class="fragment">Hard to reproduce errors (production specific)</li>
+					<li class="fragment">Hard to recover</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>What about Agile?</h2>
+				<!-- <img src="img/agile-manifesto.jpg" style="width: 150%; height: 150%; max-width: 150%; max-height: 150%; border: none;" /> -->
+				<img src="img/agile-principles.jpg"
+					style="border: none;" />
+				<!-- author="Henrik Kniberg" -->
+			</section>
+
+			<section>
+				<h2>DevOps origin</h2>
+				<ul>
+					<li class="fragment">Many unknown heroes</li>
+					<li class="fragment">John Allspaw’s Velocity 2009 presentation “10+ Deploys Per Day: Dev and Ops Cooperation @ Flickr”</li>
+					<li class="fragment">Patrick Debois "DevOps Days" in Ghent in late 2009</li>
+					<li class="fragment">Even earlier: session “Agile Infrastructure” (2008), "agile-sysadmin" mailing list </li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>DevOps</h2>
+				<ul>
+					<li class="fragment">A lot of different things to different people - broad concept (like "Agile" or "Quality")</li>
+					<li class="fragment">Operations and development engineers participating together in the entire service lifecycle (design, dev, production support)</li>
+					<li class="fragment">Operations staff making use many of the same techniques as developers for their systems work</li>
+					<li class="fragment">Take away “throw it over the wall” mentality</li>
+					<img class="fragment" src="img/WallOfConfusion_Release.png"	style="border: none;" /> <!-- src="http://dev2ops.org/2010/02/what-is-devops/" -->
+				</ul>
+			</section>
+			
+			<section>
+				<h2>DevOps - set of:</h2>
+				<ul>
+				<li class="fragment">Values (like in Agile Manifesto, e.g. "Working software")</li>
+				<li class="fragment">Principles ("Infrastructure as code")</li>
+				<li class="fragment">Methods (Kanban)</li>
+				<li class="fragment">Practices (Continuous Deployment, metrics and monitoring scheme, virtualization)</li>
+				<li class="fragment">Tools (Bamboo, Puppet, Vagrant)</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>DevOps complements Agile</h2>
+					<p>"In the end, what DevOps hopes to bring to Agile is the
+						understanding and practice that <b>software isn’t done until it’s
+						successfully delivered </b> to a user and meets their expectations
+						around availability, performance, and pace of change.", </p>
+					<a href="http://theagileadmin.com/what-is-devops">http://theagileadmin.com/what-is-devops/</a>
+			</section>
+
+			<section>
+				<h2>DevOps tools</h2>
+			</section>
+
+			<section>
+				<!--  data-background="img/periodic.png"> -->
+				<img src="img/periodic.png" /> <a
+					href="https://xebialabs.com/periodic-table-of-devops-tools">https://xebialabs.com/periodic-table-of-devops-tools</a>
+			</section>
+			
+			<section>
+				<h2>Example of process</h2>
+				<img src="img/diagram_devops.png" />
+			</section>
+
+			<section>
+				<h2>Don't be a DevOps zombie</h2>
+				<img src="img/ScrumZombie.png" style=" border: none;" />
 			</section>
 
 			<section>
