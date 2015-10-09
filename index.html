@@ -16,7 +16,7 @@
 	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 <link rel="stylesheet" href="css/reveal.css">
-<link rel="stylesheet" href="css/theme/black.css" id="theme">
+<link rel="stylesheet" href="css/theme/sky.css" id="theme">
 
 <!-- Code syntax highlighting -->
 <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -45,33 +45,70 @@
 
 			<section>
 				<h1>DevOps</h1>
-				<h3>Co to jest i dlaczego to takie ważne</h3>
+				<h3><i>why you should care</i></h3>
 				<p>
 					<small>Andrzej Bednarz <a
 						href="http://twitter.com/bednarz_andrzej">@bednarz_andrzej</a></small>
 				</p>
-				<img src="img/NA_logo_header.png" style="width: 25%; height: 25%; border: 0" />
+				<img src="img/NA_logo_header.png" style="width: 25%; height: 25%; border: 0; box-shadow: 0 0 0;" />
 			</section>
 
 			<section>
-				<h2>O mnie</h2>
+				<h2>About me</h2>
 				<ul>
-					<li>10+ lat w software development</li>
-					<li>CTO w NetworkedAssets</li>
+					<li>10+ years in software development</li>
+					<li>Currently CTO in NetworkedAssets</li>
 					<li>Agile</li>
 					<li>Software Craftsmanship</li>
-					<li>Java i JVM</li>
+					<li>Java and JVM</li>
 				</ul>
 			</section>
 
 			<section>
 				<h2>Agenda</h2>
 				<ul>
-					<li>Jak to wyglądało kiedyś</li>
-					<li>Geneza DevOps</li>
-					<li>Przykład procesu</li>
-					<li>Przykłady narzędzi</li>
+					<li>What is the problem?</li>
+					<li>Where DevOps come from</li>
+					<li>A DevOps process</li>
+					<li>Some DevOps tools</li>
 				</ul>
+			</section>
+
+			<section>
+				<h2>Deployment in the past</h2>
+					<ul>
+						<li><b>2005</b>: <br/>Classes, beginning of CI, big bang release</li><!-- Bylo juz CI, wchodzilo budowanie paczek, ale klaski, big bang release, lokalne srodowisko nic wspolnego z prod. -->
+						<li><b>2010</b>: Manual process, backup, local vs. production - hard testing, failover not really tested</li><!--  CI budowalo, ale deploy reczny, dlugie procedury, backupy, dlugie przerwy -->
+					</ul>
+			</section>
+
+			<section>
+				<h3><i>So what?</i></h3>
+			</section>
+
+			<section>
+				<h2>Agile</h2>
+					<ul>
+						<li>We already improved the side: <i>requirements -> code</i>. What about <i>code -> production</i></li>
+						<li>Long and error prone deployment process. How to accelerate your business?</li>
+						<li>While, as with Agile, it’s incorrect to say a tool is “a DevOps tool” in the sense that it will magically bring you DevOps, 
+						there are certainly specific tools being developed with the express goal of facilitating the above principles, methods, and practices, 
+						and a holistic understanding of DevOps should incorporate this layer</li> <!-- http://theagileadmin.com/what-is-devops/  -->
+						<li> In the end, what DevOps hopes to bring to Agile is the understanding and practice that software isn’t done 
+						until it’s successfully delivered to a user and meets their expectations around availability, performance, and pace of change.</li> <!-- http://theagileadmin.com/what-is-devops/  --> 
+					</ul>
+			</section>
+
+			<section>
+				<h2>Imagine how great it could be</h2>
+			</section>
+
+			<section>
+				<h2>Thank you</h2>
+			</section>
+
+			<section>
+				<h2>Questions?</h2>
 			</section>
 
 		</div>
@@ -90,7 +127,7 @@
 			history : true,
 			center : true,
 
-			transition : 'slide', // none/fade/slide/convex/concave/zoom
+			transition : 'convex', // none/fade/slide/convex/concave/zoom
 
 			// Optional reveal.js plugins
 			dependencies : [ {
